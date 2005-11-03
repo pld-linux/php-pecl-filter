@@ -20,13 +20,20 @@ Requires:	%{_sysconfdir}/conf.d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The Input Filter extension is meant to address this issue by
-implementing a set of filters and mechanisms that users can use to
-safely access their input data.
+We all know that you should always check input variables, but PHP does
+not offer really good functionality for doing this in a safe way. The
+Input Filter extension is meant to address this issue by implementing
+a set of filters and mechanisms that users can use to safely access
+their input data.
 
 In PECL status of this extension is: %{_status}.
 
 %description -l pl
+Wiadomo, ¿e trzeba zawsze sprawdzaæ zmienne wej¶ciowe, ale PHP nie
+oferuje naprawdê dobrej funkcjonalno¶ci do robienia tego w sposób
+bezpieczny. Rozszerzenie Input Filter ma rozwi±zaæ ten problem poprzez
+zaimplementowanie zestawu filtrów i mechanizmów, których u¿ytkownicy
+mog± bezpiecznie u¿ywaæ do dostêpu do danych.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
