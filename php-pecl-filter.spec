@@ -2,12 +2,11 @@
 %define		_status		beta
 %define		_sysconfdir	/etc/php
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
-
 Summary:	%{_modname} - extension for safely dealing with input parameters
 Summary(pl):	%{_modname} - rozszerzenie do bezpiecznej obs³ugi danych wej¶ciowych
 Name:		php-pecl-%{_modname}
 Version:	0.9.2
-Release:	1
+Release:	2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
