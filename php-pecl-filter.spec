@@ -6,7 +6,7 @@ Summary:	%{_modname} - extension for safely dealing with input parameters
 Summary(pl):	%{_modname} - rozszerzenie do bezpiecznej obs³ugi danych wej¶ciowych
 Name:		php-pecl-%{_modname}
 Version:	0.10.0
-Release:	2
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
@@ -43,7 +43,8 @@ To rozszerzenie ma w PECL status: %{_status}.
 %build
 cd %{_modname}-%{version}
 phpize
-%configure
+%configure \
+	--with-libdir=%{_lib}
 %{__make}
 
 %install
