@@ -5,13 +5,14 @@
 Summary:	%{_modname} - extension for safely dealing with input parameters
 Summary(pl):	%{_modname} - rozszerzenie do bezpiecznej obs³ugi danych wej¶ciowych
 Name:		php-pecl-%{_modname}
-Version:	0.10.0
-Release:	3
+Version:	0.11.0
+Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
-# Source0-md5:	4344ddba9796fa8fa23f686899dd0fdc
+# Source0-md5:	0255df6106eb36f1bc35e102ce505d9e
 URL:		http://pecl.php.net/package/filter/
+BuildRequires:	pcre-devel
 BuildRequires:	php-devel >= 3:5.1.5-2
 BuildRequires:	rpmbuild(macros) >= 1.322
 %{?requires_php_extension}
